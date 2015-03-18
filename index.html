@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<title>Belajar Angular</title>
+		<!-- Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="assets/js/mainController.js"></script>
+
+		<!-- Styleshit -->
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container" ng-controller="storeController as store">
+			<div class="col-md-4 boxShadow" ng-hide="store.product[0].sold">
+				<h1>{{store.product[0].name}}</h1>
+				<h2>{{store.product[0].price | currency:"Rp.":2}}</h2>
+				<p>{{store.product[0].description}}</p>
+				<button class="btn btn-default clearfix" ng-show="store.product[0].purchasable">Add to Cart</button>
+			</div>
+		</div>
+	</body>
+</html>
