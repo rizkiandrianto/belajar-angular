@@ -1,4 +1,45 @@
+ul {
+	padding: 0;
+}
+
 .boxShadow {
 	box-shadow: 1px 1px 10px #000;
 	border-radius: 4px;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.description {
+	text-align: justify;
+}
+
+.small-image {
+	width: 40px;
+	height: 40px;
+}
+
+.img-thumbnail {
+	padding-top: 5px;
+}
+
+.img-wrap {
+	  background: #f8f8f8;
+	  height: auto;
+	  margin: 0 auto 10px;
+	  padding: 10px;
+	  width: 200px;
+}
+
+li.thumbnail {
+	margin-bottom: 0px;
+}
+
+.panel {
+	text-align: justify;
+}
+
+.panel h4 {
+	text-align: center;
 }
