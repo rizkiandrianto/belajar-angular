@@ -32,4 +32,16 @@
 	}
 	];
 
+	app.controller('tabController', function(){
+		this.panel = 1;	
+
+		this.pilihTab = function(setTab) {
+			this.panel = setTab;
+		}
+		this.isSelected = function (cekTab) {
+			return this.panel === cekTab;
+		}
+
+	});
+
 })();
